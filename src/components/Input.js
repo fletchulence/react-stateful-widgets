@@ -38,7 +38,7 @@ import React, { useState } from 'react'; /* STEP 0 */
 
 export default function Input() {
   /* STEP 1 */
-  const [ inputValue, setInputValue ] = useState('type something');
+  const [ inputValue, setInputValue ] = useState('');
 
   const changeInput = evt => {
     // When the input changes, its whole value can be found inside the event object.
@@ -51,7 +51,7 @@ export default function Input() {
   };
   const reset = () => {
     /* STEP 5 */
-    setInputValue('reset')
+    setInputValue('')
   };
 
   const style = {
